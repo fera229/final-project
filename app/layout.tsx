@@ -25,10 +25,14 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+    <html lang="en" className="h-full">
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} h-full flex flex-col`}
+      >
         <Header />
-        {children}
+        <div className="flex-grow flex justify-center items-center">
+          {children}
+        </div>
       </body>
     </html>
   );

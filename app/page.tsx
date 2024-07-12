@@ -15,7 +15,7 @@ export default function Home() {
         </p> */}
 
         <Image
-          src="/assets/home.svg"
+          src="/assets/home1.jpg"
           alt="Diabetes Management"
           width={400}
           height={300}
@@ -24,12 +24,12 @@ export default function Home() {
         />
 
         <div className="flex space-x-4">
-          <Link href={{ pathname: '/register' }} passHref>
+          <Link href="/register">
             <div className="px-6 py-3 bg-customPrimary text-white text-lg font-semibold rounded-md shadow-md hover:bg-customSecondary transition-colors text-center cursor-pointer">
               Register
             </div>
           </Link>
-          <Link href={{ pathname: '/login' }} passHref>
+          <Link href="/login">
             <div className="px-6 py-3 bg-customSecondary text-white text-lg font-semibold rounded-md shadow-md hover:bg-customPrimary transition-colors text-center cursor-pointer">
               Sign In
             </div>
